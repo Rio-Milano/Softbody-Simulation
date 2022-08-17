@@ -45,7 +45,7 @@ namespace sf
 
         inline float Magnitude(const sf::Vector2f& v)
         {
-            return sqrt(pow(v.x, 2) + pow(v.y, 2));
+            return static_cast<float>(sqrt(pow(v.x, 2) + pow(v.y, 2)));
         }
 
         inline sf::Vector2f Normalize(const sf::Vector2f& v)
